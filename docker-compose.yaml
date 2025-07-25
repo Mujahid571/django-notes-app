@@ -1,6 +1,6 @@
 version : "3.3"
 services :
   web :
-    image : "mujahid3311/notes-app:v1
+    image : "mujahid3311/notes-app:v1"
     ports :
       - "8000:8000"
