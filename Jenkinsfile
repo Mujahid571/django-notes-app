@@ -13,9 +13,11 @@ pipeline{
         
         stage("code"){
             steps{
-                echo "This is the cloning the code"
-                git url: "https://github.com/Mujahid571/django-notes-app.git",branch:"main"
-                echo "code clonning successfull"
+                script{
+                    echo "This is the cloning the code"
+                    clone("https://github.com/Mujahid571/django-notes-app.git",branch:"main")
+                    echo "code clonning successfull"
+                }
             }
             
         }
